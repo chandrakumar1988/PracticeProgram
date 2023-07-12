@@ -6,6 +6,8 @@ public class StringReversedifferntway {
     {
         String reversestrg =Reversestringbycharatindex();
         System.out.println(reversestrg);
+        String reversestrg1=Reversestingwithoutchangingtheforloop();
+        System.out.println(reversestrg1);
     }
     public static String Reversestringbycharatindex()
     {
@@ -19,6 +21,25 @@ public class StringReversedifferntway {
            reversestring =reversestring+ch;
        }
       return reversestring;
+
+
+    }
+
+    //Program 2 without changing for loop
+    public static String Reversestingwithoutchangingtheforloop()
+    {
+        String Originaltext =" Welcome to Sagent company";
+        int len =Originaltext.length();
+        char ch;
+        String reversestring="";
+        for(int i=0;i<=len-1;i++)
+        {
+           ch =Originaltext.charAt(i);
+            reversestring =ch+reversestring;
+
+        }
+        return reversestring;
+
 
 
     }
